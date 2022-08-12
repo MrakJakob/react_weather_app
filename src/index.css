@@ -1,0 +1,124 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;500;600&display=swap");
+
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+ font-family: 'montserrat', sans-serif;
+}
+
+@media screen and (max-width: 800px) {
+  .App {
+    background-image: url(./assets/winter.png);
+  }
+
+  .App.warm {
+    background-image: url("./assets/summer.jpg");
+  }
+}
+@media screen and (min-width: 800px) {
+  .App {
+    background-image: url(./assets/winterDesktop.jpg);
+  }
+
+  .App.warm {
+    background-image: url(./assets/summerDesktop.jpg);
+  }
+}
+
+
+.App {
+  
+  background-size: cover;
+  background-position: bottom;
+  transition: 0.4s ease-out;
+  align-items: center;
+  justify-content: center;
+  align-content: center;
+  
+}
+
+
+
+main {
+  min-height: 100vh;
+  background-image: linear-gradient();
+  padding: 25pt;
+  min-width: 100vw;
+  text-align: center;
+  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.4));
+}
+
+.searchBox {
+  width: 100%;
+  margin: 0 0 75pt;
+}
+
+.searchBox .searchBar {
+  display: block;
+  width: 100%;
+  padding: 15pt;
+
+  appearance: none;
+  background: none;
+  border: none;
+  outline: none;
+
+  background-color: rgba(255, 255, 255, 0.541);
+  border-radius: 5pt;
+
+  transition: 0.4s ease;
+}
+
+.searchBox .searchBar:focus {
+  background-color: rgba(255, 255, 255, 0.7);
+}
+
+.location {
+  margin: auto;
+  font-size: 20pt;
+  font-weight: 600;
+  color: rgb(255, 255, 255);
+  text-shadow: 1pt 1pt rgba(255, 255, 255, 0.4);
+  padding: 5pt;
+}
+
+.date {
+  font-weight: 400;
+  font-size: 12pt;
+  padding-bottom: 5pt;
+  color: white;
+}
+
+.weatherBox {
+  font-weight: 500;
+  padding: 10pt;
+  color: white;
+  text-shadow: 1pt 1pt rgba(255, 255, 255, 0.4);
+  width: 100%;
+}
+
+.weather {
+  font-size: 18pt;
+}
+
+.temperature {
+  font-size: 50pt;
+}
+
+.icon {
+  padding-top: 5pt;
+}
+
+.weatherForecast {
+  font-size: 11pt;
+}
+
+.cards {
+  padding-top: 20pt;
+}
+
